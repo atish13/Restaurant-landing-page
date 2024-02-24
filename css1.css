@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+  }
+.container{
+    display: grid;
+    text-align: center;
+    grid-row-gap:20px;
+  
+}
+/* navigation */
+
+nav ul{
+    display: flex;
+    justify-content: end;
+    
+}
+nav ul li ,#menu ul li{
+    list-style-type: none;
+    margin-right:15px ;
+}
+nav ul li a, #menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+
+}
+
+
+.back{
+    filter: brightness(20%);
+}
+ 
+.home .center{
+
+    color: white;
+    position: absolute;
+    top:200px;
+    left: 420px;
+    padding: 10px;
+    background-color: transparent;
+  
+    
+    
+
+}
+.center .name{
+    box-sizing: border-box;
+    font-size: 38px;
+    font-weight: 100;
+    margin: 2px;
+    
+}
+.center p{
+    margin: 0%;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+ button{
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(217, 8, 8);
+    border: none;
+    width: 100px;
+    border-radius: 15px;
+}
+
+/* menu */
+#menu{
+    color: white;
+    
+   
+}
+#menu ul{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+#menu ul li{
+    list-style-type: none;
+    font-size: 25px;
+}
+li:hover{
+    border-bottom: 1px solid wheat;
+   
+}
+
+#pizza, #sandwich ,#burger{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap:10px;
+}
+.box
+{
+    border:1px solid white;
+    color: black;
+    
+}
+.b-1:hover,.b-2:hover,.b-3:hover,.b-4:hover,.b-5:hover,.b-6:hover
+{
+    filter: brightness(50%);
+    color: white;
+
+}
+
+/* about us */
+
+#about{
+    margin-top: 10px;  
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+   
+    border-top: 1px solid white;
+    justify-content: space-around;
+  
+}
+#about ul li,#contact ul li{
+margin-bottom: 18px;
+font-size: 18px;
+border: none;
+text-align: left;
+text-transform: uppercase;
+
+}
+#about img{
+    grid-column: span 2;
+}
+h2,h3{
+    text-align: left;
+    margin-left: 10px;
+}
+
+
+/* contact */
+#contact{
+    /* border: 1px solid white; */
+    border-top: 1px solid white;
+}
+
+footer{
+    background-color: rgb(217, 8, 8);
+    padding: 30px;
+}
+
+
+/* media-query */
+@media screen and (max-width: 912px){
+    *{
+        font-size: 12px;
+    }
+    .home .center{
+
+        color: white;
+        position: absolute;
+        top:200px;
+        left: 160px;
+        padding: 10px;
+        background-color: transparent;
+      }
+
+      nav ul{
+        display: flex;
+        justify-content: center;
+      }
+        
+      #pizza,#sandwich, #burger{
+        display: grid;
+        grid-template-columns: 300px ;
+        grid-template-rows: auto ;
+        grid-gap:10px;
+        justify-content: center;
+    }
+   h2{
+    text-align: center;
+   }
+    #about
+    {
+        display: grid;
+        grid-template-columns: 300px;
+        justify-content: start;
+    }
+    #about img{
+        
+        justify-self: center;
+       
+    }
+
+}
